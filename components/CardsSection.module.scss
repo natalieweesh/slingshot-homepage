@@ -1,11 +1,12 @@
 @import "./variables.module";
 
 .cardsSection {
-  display: grid;
+  display: block;
   grid-template-columns: 1fr;
   max-width: 100%;
   margin-bottom: 10.5rem;
   @include bigger {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
     height: 46rem;
@@ -43,7 +44,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 90%;
   @include bigger {
     grid-column-start: 2;
     max-width: 85vw;
