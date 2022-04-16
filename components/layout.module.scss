@@ -1,7 +1,7 @@
 @import "./variables.module";
 
 .container {
-  background: $black;
+  background: $offBlack;
   color: $white;
   overflow-x: hidden;
 }
@@ -21,83 +21,50 @@
 .navbar {
   width: 100%;
   text-align: left;
-  padding-left: 1rem;
-  padding-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid $darkGray;
 }
 
-.headerText {
-  font-size: 1rem;
-  color: $textGray;
-  @include bigger {
-    font-size: 1.5rem;
-  }
+.hero {
+  position: relative;
+  padding: 5rem 0;
+  background: url("/images/hero.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.label {
-  text-transform: uppercase;
-  color: $textGray;
-  font-size: 1rem;
-  @include bigger {
-    font-size: 1.125rem;
-  }
-}
-
-.learnMore {
-  color: $green;
-  font-size: 0.875rem;
-  text-decoration: underline;
-  display: block;
-  font-family: SequelSansBold;
-}
-
-.input {
-  height: 3.125rem;
-  background: $white;
-  border-radius: 0.5rem;
-  display: flex;
-  width: 100%;
-  border: 4px solid $white;
-  max-width: 39.5rem;  
-  margin: 5.6rem auto 2.4rem;
-  @include bigger {
-    margin: 7.25rem auto 5rem;
-  }
-}
-
-.secondInput {
-  margin-bottom: 1.5rem;
-  margin-top: 2rem;
-}
-
-.textInput {
-  height: 100%;
-  flex-grow: 1;
-  outline: 0;
-  border: 0;
-  margin-left: 0.5rem;
-  font-family: SequelSans;
-}
-
-.submit {
+.button {
   background: $green;
   color: $offBlackText;
-  font-size: 0.875rem;
-  padding: 1rem 2rem;
+  font-size: 1rem;
+  padding: 2rem 5rem;
   border: 0;
-  border-radius: 0.5rem;
+  text-decoration: none;
+  display: block;
+  max-width: 30rem;
+  margin: 3rem auto;
+  text-align: center;
   line-height: 0;
-  height: 2.625rem;
   font-family: SequelSansBold;
   &:hover {
     cursor: pointer;
   }
 }
 
-.extraText {
-  display: none;
-  @include bigger {
-    display: inline;
-  }
+.icons {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.downArrow {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.downArrowImage {
+  transform: rotate(-90deg);
 }
 
 .smallText {
@@ -117,5 +84,61 @@
   display: inline-block;
   @include bigger {
     display: none;
+  }
+}
+
+.textAndImageOuter {
+  padding: 5rem 0;
+  background-image: none;
+  @include bigger {
+    padding: 7rem 0;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 60% auto;
+  }
+}
+
+.textAndImageSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+  @include bigger {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  @include bigger {
+    max-width: 85vw;
+  }
+}
+
+.imageSection {
+  @include bigger {
+    display: none;
+  }
+}
+
+.textAndImageOuter1 {
+  @include bigger {
+    background-image: url('../public/images/chart.png');
+  }
+}
+.textAndImageOuter2 {
+  @include bigger {
+    background-image: url('../public/images/chart2.png');
+  }
+}
+
+.textAndImageOuter3 {
+  @include bigger {
+    background-image: url('../public/images/chat.png');
+    background-position: left center;
+    background-size: auto 100%;
   }
 }

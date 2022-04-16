@@ -3,14 +3,16 @@
 }
 
 $black: #000;
+$offBlack: #0c0a0f;
 $white: #fff;
-$green: #66FF99;
+$green: #92faa3;
 $offBlackText: #110E15;
 $cardBackground: #373A44;
 $twitterCardBackground: #1C1D22;
 $textGray: #D8D9DB;
 $lightTextGray: #FAFAFB;
 $twitterGray: #7D8088;
+$darkGray: #31353b;
 
 
 .center {
@@ -53,5 +55,24 @@ $twitterGray: #7D8088;
   @include bigger {
     font-size: 1.5rem;
     line-height: 2.1rem;
+  }
+}
+
+.textLink {
+  color: $textGray;
+}
+
+.headerText {
+  font-size: 1rem;
+  color: $textGray;
+  @include bigger {
+    font-size: 1.5rem;
+  }
+}
+
+.bigRightAlign {
+  @include bigger {
+    grid-column-start: 2;
+    text-align :right;
   }
 }
