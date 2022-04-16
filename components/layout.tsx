@@ -10,7 +10,14 @@ export default function Layout() {
   return (
     <div>
       <div className={styles.container}>
-        <nav className={styles.navbar}><a href="https://slingshot.finance"><span className={styles.logoSmaller}><Image src="/images/logo-condensed.svg" alt="Slingshot" width={33} height={26} /></span><span className={styles.logoBigger}><Image src="/images/logo.svg" alt="Slingshot" width={215} height={56} /></span></a></nav>
+        <nav className={styles.navbar}>
+          <a href="https://slingshot.finance"><span className={styles.logoSmaller}><Image src="/images/logo-condensed.svg" alt="Slingshot" width={33} height={26} /></span><span className={styles.logoBigger}><Image src="/images/logo.svg" alt="Slingshot" width={215} height={56} /></span></a>
+          <div>
+            <a className={styles.navLink} href="https://app.slingshot.finance/markets/m">Markets</a>
+            <a className={styles.navLink} href="/">NFTs</a>
+            <a className={styles.connectWallet} href="/">Connect Wallet</a>
+          </div>
+        </nav>
 
         <div className={styles.heroOuter}>
         <div className={styles.innerContainer}>
