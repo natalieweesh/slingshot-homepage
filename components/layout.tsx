@@ -71,10 +71,11 @@ export default function Layout() {
         </div>
 
         <CarouselSection />
-        <p className={cn(styles.headerText, styles.center)}>Mix and match Slingshot 2009 NFTs to find your fresh fit.<br/>Available to buy in the 2099 Marketplace.</p>
-        <a href="/" className={cn(styles.button, styles.center, styles.checkItOut)}>Check it out</a>
-
-        <header className={cn(styles.header2, styles.center)}>People already loving Slingshot</header>
+        <div className={styles.innerContainer}>
+          <p className={cn(styles.headerText, styles.center)}>Mix and match Slingshot 2009 NFTs to find your fresh fit.<br/>Available to buy in the 2099 Marketplace.</p>
+          <a href="/" className={cn(styles.button, styles.center, styles.checkItOut)}>Check it out</a>
+          <header className={cn(styles.header2, styles.center)}>People already loving Slingshot</header>
+        </div>
         <TwitterSection />
       </div>
     </div>

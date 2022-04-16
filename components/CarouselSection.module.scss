@@ -6,6 +6,7 @@
   background: url("/images/2099background.png") no-repeat;
   background-position: center center;
   background-size: cover;
+  min-height: 25rem;
   &::before, &::after {
     content: '';
     display: block;
