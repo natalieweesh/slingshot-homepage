@@ -1,0 +1,96 @@
+@import "./variables.module";
+
+.carouselContainer {
+  margin: 5rem auto;
+  position: relative;
+  background: url("/images/2099background.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  &::before, &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 4.76rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left, transparent 0%, $black 100%);
+  }
+  &::after {
+    right: 0;
+    left: auto;
+    background: linear-gradient(to right, transparent 0%, $black 100%);
+  }
+  @include bigger {
+    &::before, &::after {
+      width: 7.9375rem;
+    }
+  }
+}
+
+.bigNumber {
+  max-width: 72.5rem;
+  margin: 8rem auto -4rem;
+  @include bigger {
+    margin-bottom: -8rem;
+  }
+}
+
+.numbers {
+  color: $green;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  @include bigger {
+    flex-direction: row;
+  }
+}
+
+.greenNumber {
+  margin: 1rem;
+}
+
+.numberUnder {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.person {
+  margin: 2rem;
+}
+
+.leftArrow, .rightArrow {
+  width: 5.25rem;
+  height: 7.9375rem;
+  transform: scale(0.6);
+  z-index: 2;
+  position: absolute;
+  top: calc(50% - 3rem);
+  left: 0;
+  @include bigger {
+    transform: scale(1);
+  }
+}
+
+.rightArrow {
+  left: auto;
+  right: 0;
+  transform: scale(0.6) rotate(180deg);
+  @include bigger {
+    transform: scale(1) rotate(180deg);
+  }
+}

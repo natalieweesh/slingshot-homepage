@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import Image from 'next/image';
 import { CardsSection } from './CardsSection';
+import { CarouselSection } from './CarouselSection';
 import { StatsSection } from './StatsSection';
 import { TwitterSection } from './TwitterSection';
 import styles from './layout.module.scss';
@@ -68,6 +69,10 @@ export default function Layout() {
           </div>
           </div>
         </div>
+
+        <CarouselSection />
+        <p className={cn(styles.headerText, styles.center)}>Mix and match Slingshot 2009 NFTs to find your fresh fit.<br/>Available to buy in the 2099 Marketplace.</p>
+        <a href="/" className={cn(styles.button, styles.center, styles.checkItOut)}>Check it out</a>
 
         <header className={cn(styles.header2, styles.center)}>People already loving Slingshot</header>
         <TwitterSection />
