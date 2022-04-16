@@ -7,7 +7,7 @@ $offBlack: #0c0a0f;
 $white: #fff;
 $green: #92faa3;
 $offBlackText: #110E15;
-$cardBackground: #373A44;
+$cardBackground: #0f0d14;
 $twitterCardBackground: #1C1D22;
 $textGray: #D8D9DB;
 $lightTextGray: #FAFAFB;
@@ -75,4 +75,10 @@ $darkGray: #31353b;
     grid-column-start: 2;
     text-align :right;
   }
+}
+
+.innerContainer {
+  max-width: 72.5rem;
+  padding: 0 2rem 2rem;
+  margin: 0 auto;
 }

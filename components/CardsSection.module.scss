@@ -12,6 +12,12 @@
   }
 }
 
+.cardsBackground {
+  background: url("/images/cardsBackground.png") no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -19,19 +25,6 @@
   grid-gap: 0.75rem;
   z-index: 0;
   position: relative;
-  &::before {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    width: 150%;
-    height: 160%;
-    top: -30%;
-    left: -19%;
-    background: url('../public/images/dots.svg') no-repeat;
-    background-position: center center;
-    background-size: cover;
-    transform: scale(-1, 1);
-  }
   @include bigger {
     grid-gap: 1rem;
   }
