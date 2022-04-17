@@ -29,7 +29,7 @@
 }
 .hero {
   position: relative;
-  padding: 5rem 0;
+  padding: 5rem 0 1rem;
 }
 
 .button {
@@ -87,7 +87,7 @@
 }
 
 .textAndImageOuter {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem;
   background-image: none;
   @include bigger {
     padding: 7rem 0;

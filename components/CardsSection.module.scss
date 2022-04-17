@@ -4,12 +4,13 @@
   display: block;
   grid-template-columns: 1fr;
   max-width: 100%;
-  margin-bottom: 10.5rem;
+  margin-bottom: 2rem;
   @include bigger {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
     height: 46rem;
+    margin-bottom: 10.5rem;
   }
 }
 

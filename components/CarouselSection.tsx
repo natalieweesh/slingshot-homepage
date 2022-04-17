@@ -18,9 +18,13 @@ export const CarouselSection = () => {
           breakpoint: {min: 850, max: 1000},
           items: 4
         },
-        mobile: {
-          breakpoint: { max: 850, min: 0 },
+        portraitMobile: {
+          breakpoint: {min: 600, max: 850},
           items: 3
+        },
+        mobile: {
+          breakpoint: { max: 600, min: 0 },
+          items: 2
         }
       }} arrows={false}>
         <div className={styles.person}><Image src="/images/person1.png" width={211} height={644} /></div>
