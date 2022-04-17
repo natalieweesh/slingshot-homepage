@@ -25,6 +25,7 @@
     background: linear-gradient(to right, transparent 0%, $black 100%);
   }
   @include bigger {
+    margin: 7rem auto 5rem;
     &::before, &::after {
       width: 7.9375rem;
     }
