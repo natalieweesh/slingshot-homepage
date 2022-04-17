@@ -28,7 +28,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Join the waitlist for Slingshot"
+          content="Slingshot is a web3 trading platform that lets you trade 7500+ crypto tokens at the best prices at lightning fast speed"
         />
         <meta name="og:title" content="Slingshot" />
         <meta name="twitter:card" content="summary_large_image" />
