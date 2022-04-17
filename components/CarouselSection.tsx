@@ -5,6 +5,14 @@ import Carousel from 'react-multi-carousel';
 import styles from './CarouselSection.module.scss';
 import 'react-multi-carousel/lib/styles.css';
 
+const CustomRightArrow = ({ onClick }) => {
+  return <button className={styles.rightButtonBigger} onClick={() => onClick()} />;
+};
+
+const CustomLeftArrow = ({ onClick }) => {
+  return <button className={styles.leftButtonBigger} onClick={() => onClick()} />;
+};
+
 export const CarouselSection = () => {
   return (
     <div className={styles.carouselContainer}>
@@ -26,7 +34,7 @@ export const CarouselSection = () => {
           breakpoint: { max: 600, min: 0 },
           items: 2
         }
-      }} arrows={false}>
+      }} customRightArrow={<CustomRightArrow />} customLeftArrow={<CustomLeftArrow />}>
         <div className={styles.person}><Image src="/images/person1.png" width={211} height={644} /></div>
         <div className={styles.person}><Image src="/images/person2.png" width={211} height={644} /></div>
         <div className={styles.person}><Image src="/images/person3.png" width={211} height={644} /></div>

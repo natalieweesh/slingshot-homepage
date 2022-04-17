@@ -96,3 +96,28 @@
     transform: scale(1) rotate(180deg);
   }
 }
+
+.leftButtonBigger, .rightButtonBigger {
+  display: none;
+  @include bigger {
+    display: block;
+    background: transparent;
+    width: 5.25rem;
+    border: 0;
+    height: 7.9375rem;
+    z-index: 3;
+    position: absolute;
+    top: calc(50% - 3rem);
+    right: 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.leftButtonBigger {
+  @include bigger {
+    left: 0;
+    right: auto;
+  }
+}
