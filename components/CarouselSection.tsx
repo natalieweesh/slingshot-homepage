@@ -34,7 +34,7 @@ export const CarouselSection = () => {
           breakpoint: { max: 600, min: 0 },
           items: 2
         }
-      }} customRightArrow={<CustomRightArrow />} customLeftArrow={<CustomLeftArrow />}>
+      }} customRightArrow={<CustomRightArrow onClick />} customLeftArrow={<CustomLeftArrow onClick />}>
         <div className={styles.person}><Image src="/images/person1.png" width={211} height={644} /></div>
         <div className={styles.person}><Image src="/images/person2.png" width={211} height={644} /></div>
         <div className={styles.person}><Image src="/images/person3.png" width={211} height={644} /></div>
