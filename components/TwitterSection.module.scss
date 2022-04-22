@@ -1,21 +1,5 @@
 @import "./variables.module";
 
-.twitterSectionTop, .twitterSectionBottom {
-  height: 12.375rem;
-  width: 100%;
-  overflow-x: auto;
-  display: flex;
-  margin-top: 2.6rem;
-  @include bigger {
-    display: none;
-  }
-}
-
-.twitterSectionBottom {
-  margin-top: 1.5rem;
-  margin-bottom: 8.6rem;
-}
-
 .twitterSectionBigger {
   width: 100%;
   height: 19.4rem;
@@ -43,4 +27,79 @@
   @include bigger {
     display: flex;
   }
+}
+
+.carouselContainer {
+  margin: 3rem auto 8rem;
+  position: relative;
+  min-height: 7.9375rem;
+  &::before, &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 4.76rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left, transparent 0%, $black 100%);
+  }
+  &::after {
+    right: 0;
+    left: auto;
+    background: linear-gradient(to right, transparent 0%, $black 100%);
+  }
+  @include bigger {
+    margin-bottom: 10rem;
+    &::before, &::after {
+      width: 7.9375rem;
+    }
+  }
+}
+
+.leftArrow, .rightArrow {
+  width: 5.25rem;
+  height: 7.9375rem;
+  transform: scale(0.6);
+  z-index: 2;
+  position: absolute;
+  top: calc(50% - 4rem);
+  left: 0;
+  @include bigger {
+    transform: scale(1);
+  }
+}
+
+.rightArrow {
+  left: auto;
+  right: 0;
+  transform: scale(0.6) rotate(180deg);
+  @include bigger {
+    transform: scale(1) rotate(180deg);
+  }
+}
+
+.leftButtonBigger, .rightButtonBigger {
+  display: block;
+  transform: scale(0.6);
+  background: transparent;
+  width: 5.25rem;
+  border: 0;
+  height: 7.9375rem;
+  z-index: 3;
+  position: absolute;
+  top: calc(50% - 4rem);
+  right: 0;
+  &:hover {
+    cursor: pointer;
+  }
+  @include bigger {
+    transform: scale(1);
+  }
+}
+
+.leftButtonBigger {
+    left: 0;
+    right: auto;
 }
