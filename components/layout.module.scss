@@ -72,18 +72,8 @@
   margin-bottom: 5rem;
 }
 
-.logoBigger {
-  display: none;
-  @include bigger {
-    display: inline-block;
-  }
-}
-
 .logoSmaller {
   display: inline-block;
-  @include bigger {
-    display: none;
-  }
 }
 
 .textAndImageOuter {
@@ -151,9 +141,9 @@
   color: $textGray;
   padding: 1rem;
   text-decoration: none;
-  font-size: 0.75rem;
-  @include bigger {
-    font-size: 1rem;
+  font-size: 0.875rem;
+  &:hover {
+    color: $white;
   }
 }
 
@@ -161,12 +151,11 @@
   border: 1px solid $darkGray;
   color: $white;
   text-decoration: none;
+  font-size: 0.875rem;
   font-family: SequelSansBold;
-  padding: 0.6rem;
+  padding: 0.5625rem 1rem;
   font-size: 0.75rem;
   @include bigger {
-    font-size: 1rem;
-    padding: 1rem;
     margin-left: 1rem;
   }
 }
