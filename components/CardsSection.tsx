@@ -39,25 +39,7 @@ const fakeCardData = [
     name: 'Apecoin',
     price: 7.89,
     change: 675.49
-  },
-  {
-    img: '/images/profile.jpeg',
-    name: 'Apecoin',
-    price: 7.89,
-    change: 675.49
-  },
-  {
-    img: '/images/profile.jpeg',
-    name: 'Apecoin',
-    price: 7.89,
-    change: 675.49
-  },
-  {
-    img: '/images/profile.jpeg',
-    name: 'Apecoin',
-    price: 7.89,
-    change: 675.49
-  },
+  }
 ];
 
 export const CardsSection = () => {

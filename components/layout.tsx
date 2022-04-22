@@ -27,12 +27,12 @@ export default function Layout() {
             <a href="/" className={cn(styles.button, styles.center)}>Start Trading</a>
             <div className={styles.icons}><Image src="/images/icons.png" width={343} height={77} /></div>
             <div className={styles.downArrow}><Image className={styles.downArrowImage} src="/images/arrow.png" width={84} height={127} /></div>
+          <StatsSection />
           </div>
 
         </div>
         </div>
         <div className={styles.innerContainer}>
-          <StatsSection />
         </div>
 
         <div className={cn(styles.textAndImageOuter, styles.textAndImageOuter1)}>
@@ -87,6 +87,9 @@ export default function Layout() {
           <header className={cn(styles.header2, styles.center)}>People already loving Slingshot</header>
         </div>
         <TwitterSection />
+        <div className={styles.innerContainer}>
+          <a href="/" className={cn(styles.button, styles.center, styles.checkItOut)}>Start Trading</a>
+        </div>
       </div>
     </div>
   )

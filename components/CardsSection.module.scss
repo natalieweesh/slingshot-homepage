@@ -22,12 +22,15 @@
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 0.75rem;
   z-index: 0;
   position: relative;
+  max-width: 30rem;
+  margin: 0 auto;
   @include bigger {
+    max-width: 100%;
     grid-gap: 1rem;
   }
 }
@@ -36,7 +39,6 @@
   @include bigger {
     grid-row-start: 1;
     position: absolute;
-    right: 55%;
   }
 }
 

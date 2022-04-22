@@ -135,10 +135,11 @@
 }
 
 .textAndImageOuter3 {
-  @include bigger {
-    background-image: url('../public/images/chat.png');
-    background-position: left center;
-    background-size: auto 100%;
+  .imageSection {
+    @include bigger {
+      display: block;
+      grid-row-start: 1;
+    }
   }
 }
 
