@@ -75,7 +75,7 @@ export default function Layout() {
               <p className={cn(styles.headerText, styles.smallCenter, styles.bigRightAlign)}>Live chat with traders all over the world, while trading tokens. Change your avatar to your fav NFT, or build your own in the Slingshot 2099 Marketplace.</p>
             </div>
             <div className={styles.imageSection}>
-              <Image src={"/images/chat.png"} width={876} height={718} />
+              <Image src={"/images/chat.jpg"} width={845} height={698} />
             </div>
           </div>
           </div>
